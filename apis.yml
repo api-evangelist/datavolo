@@ -1,7 +1,29 @@
 aid: datavolo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/datavolo.png
 name: Datavolo
-description: Datavolo is a company surfaced as a portfolio company of general-catalyst and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Datavolo is a dataflow infrastructure company building multimodal data
+  pipelines for generative AI and unstructured data, powered by Apache NiFi.
+  Founded by the original creators of Apache NiFi, Datavolo delivers fast,
+  horizontally scalable pipelines that can be instantly reconfigured, with
+  built-in data lineage, for AI/ML and data engineering teams working with
+  documents, images, audio, and other unstructured sources. Datavolo was
+  acquired by Snowflake in November 2024 and its technology continues under
+  the Snowflake data platform. The company operates a hosted cloud service
+  (cloud.datavolo.ai / app.datavolo.ai), a documentation site, a developer
+  DevCenter of tutorials, and open-source tooling for the Apache NiFi
+  ecosystem published under the datavolo-io GitHub organization.
 url: https://raw.githubusercontent.com/api-evangelist/datavolo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,55 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Data Pipelines
+- Dataflow
+- Apache NiFi
+- Unstructured Data
+- Generative AI
+- Data Engineering
+- Data Lineage
+- ETL
+- Snowflake
 apis: []
+common:
+- type: Website
+  url: https://datavolo.io/
+- type: DeveloperPortal
+  url: https://devcenter.datavolo.io/
+- type: Documentation
+  url: https://docs.datavolo.io/
+- type: Blog
+  url: https://datavolo.io/datavolo-blog/
+- type: GitHubOrganization
+  url: https://github.com/datavolo-io
+- type: Pricing
+  url: https://datavolo.io/pricing/
+- type: PrivacyPolicy
+  url: https://datavolo.io/privacy-policy/
+- type: TermsOfService
+  url: https://datavolo.io/terms/
+- type: Login
+  url: https://cloud.datavolo.ai/
+- type: Packages
+  url: packages/datavolo-packages.yml
+- type: VulnerabilityDisclosure
+  url: security/datavolo-vulnerability-disclosure.yml
+- type: Security
+  url: https://datavolo.io/bug-bounty-program/
+- type: DomainSecurity
+  url: security/datavolo-domain-security.yml
+- type: LLMsTxt
+  url: llms/datavolo-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

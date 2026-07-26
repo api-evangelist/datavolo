@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/datavolo-io
+notes: >-
+  Datavolo publishes no client SDK for a REST API (its platform is powered by
+  Apache NiFi and exposes no first-party public REST API). The first-party
+  packages below are open-source tooling for the Apache NiFi ecosystem
+  published under the datavolo-io GitHub organization. They are build/developer
+  tooling, not API client libraries, so no `SDKs` rating pointer is emitted.
+packages:
+- language: python
+  registry: pypi
+  name: hatch-datavolo-nar
+  version: 1.0.1
+  url: https://pypi.org/project/hatch-datavolo-nar/
+  install: pip install hatch-datavolo-nar
+  source: https://github.com/datavolo-io/hatch-datavolo-nar
+  description: Hatch plugin for building Apache NiFi NAR bundles.
+  author: Datavolo Developers <dev@datavolo.io>
+  category: build-tooling
+  official: true
+- language: java
+  registry: github
+  name: datavolo-flow-diff
+  url: https://github.com/datavolo-io/datavolo-flow-diff
+  source: https://github.com/datavolo-io/datavolo-flow-diff
+  description: GitHub Action for comparing differences in Apache NiFi flow definitions.
+  category: ci-tooling
+  archived: true
+  official: true

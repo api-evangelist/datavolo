@@ -1,0 +1,45 @@
+generated: '2026-07-18'
+method: searched
+source: probe of /.well-known/* across Datavolo hosts
+notes: >-
+  No .well-known discovery documents are published on any Datavolo host.
+  docs.datavolo.io returns 403 to automated probes (bot protection); the other
+  hosts return 404. Recorded for auditability; absence is a valid, expected
+  result. No 200 documents were saved.
+hosts:
+- host: https://datavolo.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://docs.datavolo.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+- host: https://devcenter.datavolo.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
