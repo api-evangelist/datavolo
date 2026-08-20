@@ -36,6 +36,17 @@ created: '2026-07-17'
 modified: '2026-07-18'
 tags:
 - Company
+- Data Pipeline
+- Dataflows
+- Apache NiFi
+- Unstructured Data
+- Generative AI
+- Data Engineering
+- Data Lineage
+- ETL
+- Snowflake
+tags_raw:
+- Company
 - Data Pipelines
 - Dataflow
 - Apache NiFi
